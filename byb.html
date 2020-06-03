@@ -12,7 +12,7 @@
   <title>Backyard Brains</title>
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn"><a href="#top">Back to top</a></button>
+  <a onclick="topFunction()" id="myBtn" href="#jump">Back to top</a>
   <script src="js/portfolio.js"></script>
   <a class = "jump" href="#jump">Jump to Content</a>
   <header>
@@ -24,13 +24,13 @@
       </ul>
     </nav>
   </header>
-  <main id="jump" id="top">
+  <main id="jump">
 
     <div class="intro byb">
       <img src="images/projects/byb.png" alt="Backyard Brains logo" class="project_image byb">
       <div class="project_text byb">
         <h1>User Experience Consultant</h1>
-        <p>For the University of Michigan's <em>SI 622: Needs Assessment and Usability Evaluation</em> course, I worked with three classmates to act as UX consultants for our assigned client, Backyard Brains.</br></br>Throughout the semester, we supported our client by conducting research, distilling findings, crafting recommendations, and holding weekly readouts to help communicate our work. Our semester concluded with high level findings that would help them meet their goals while ensure a more fulfilling user experience.</p>
+        <p>For the University of Michigan's <em>SI 622: Needs Assessment and Usability Evaluation</em> course, I worked with three classmates to act as UX consultants for our assigned client, Backyard Brains.<br><br>Throughout the semester, we supported our client by conducting research, distilling findings, crafting recommendations, and holding weekly readouts to help communicate our work. Our semester concluded with high level findings that would help them meet their goals while ensure a more fulfilling user experience.</p>
         <!-- <ul class="byb_list">
           <li><a href="#research_methods">Research Methods</a></li>
           <li><a href="#about_byb">About Backyard Brains</a></li>
@@ -64,7 +64,7 @@
         <h2 class="problem">Problem</h2>
           <p class="problem_text">The Backyard Brains team noticed a high bounce rate on their website and high call volume from both new and returning customers inquirying about products.</p>
       </div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/rSQNi5sAwuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="byb_youtube"></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/rSQNi5sAwuc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="byb_youtube"></iframe>
     </div>
 
 
@@ -74,16 +74,23 @@
 
         <div class="finding one">
           <h2 class="finding_one_header">Finding #1: Users Want Tailored Experiences as well as Search, Filter, and Sort Functionality</h2>
-            <p class="finding_one_one">Our interviews exposed the range of users interacting with the Backyard Brains website. Some stated they didn't know where to start while others indicated they didn't know what products were right for them. Although the users have different needs, the website was not equipped to handle all of these needs effectively.</br></br>To illustrate these different users and use cases, we created personas and user scenarios. Click on each to see more.</p>
+            <p class="finding_one_one">Our interviews exposed the range of users interacting with the Backyard Brains website. Some stated they didn't know where to start while others indicated they didn't know what products were right for them. Although the users have different needs, the website was not equipped to handle all of these needs effectively.<br><br>To illustrate these different users and use cases, we created personas and user scenarios. Click on each to see more.</p>
 
             <div class="personas">
-              <button><a href="images/byb/persona/persona1.pdf" target="_blank">Lindsay Hisner</a></button>
+              <!-- <button><a href="images/byb/persona/persona1.pdf" target="_blank">Lindsay Hisner</a></button> -->
+              <div class="persona_one">
+                <a href="images/byb/persona/persona1.pdf" target="_blank">Lindsay Hisner</a>
+              </div>
               &nbsp;
               &nbsp;
-              <button><a href="images/byb/persona/persona2.pdf" target="_blank">Ashlee Smith</a></button>
+              <div class="persona_one">
+                <a href="images/byb/persona/persona2.pdf" target="_blank">Ashlee Smith</a>
+              </div>
               &nbsp;
               &nbsp;
-              <button><a href="images/byb/persona/persona3.pdf" target="_blank">Bill Campster</a></button>
+              <div class="persona_one">
+                <a href="images/byb/persona/persona3.pdf" target="_blank">Bill Campster</a>
+              </div>
             </div>
 
             <p class="finding_one_two">
@@ -92,7 +99,7 @@
               <img src="images/byb/comparator2.png" alt="Visual representation of how Backyard Brains compares to the comparators on filtering and user segmentation">
             </p>
 
-            <p class="finding_one_three">In the card sorting activity, all participants placed Beginner, Intermediate and Advanced together, and 42% placed these cards together under an “Experiments” header.</br></br>Meanwhile, 85% of participants placed Top Kits for Educators, Top Kits for Students, and Top Kits for Enthusiasts together, while 30% placed these cards together under a “Store” header.</br></br>Together, these suggest that users expect some level of segmentation, sorting and filtering on sites they visit.</p>
+            <p class="finding_one_three">In the card sorting activity, all participants placed Beginner, Intermediate and Advanced together, and 42% placed these cards together under an “Experiments” header.<br><br>Meanwhile, 85% of participants placed Top Kits for Educators, Top Kits for Students, and Top Kits for Enthusiasts together, while 30% placed these cards together under a “Store” header.<br><br>Together, these suggest that users expect some level of segmentation, sorting and filtering on sites they visit.</p>
 
             <img src="images/byb/cardsort2.png" alt="Survey results showing card sort results" class="small">
 
@@ -113,7 +120,7 @@
           <h2 class="finding_two_header">Finding #2: Users Need and Want More Troubleshooting Materials</h2>
             <p class="finding_two_one">Interviewees all felt that the experiments are great until something goes wrong. When that happens teachers said they risk losing control of the class and need to be able to quickly recover from errors.</p>
 
-            <img src="images/byb/quote1.png" alt="“If there are 3 ways to brfaeak the kit, my</br>students will find the 21st way.”" class="finding_two_two">
+            <img src="images/byb/quote1.png" alt="“If there are 3 ways to brfaeak the kit, my<br>students will find the 21st way.”" class="finding_two_two">
 
             <p class="finding_two_three">
               When guaging customer satisfaction across product set up, product usage, site product information, site experiments, site troubleshooting materials and site videos, survey results were generally positive for set up and site features. However, there was a relatively higher rate of dissatisfaction for troubleshooting material, particularly amongst teachers.
@@ -215,7 +222,7 @@
                 <div class="flip_card_back">
                   <a href="sonos.html">
                     <h1>SONOS</h1>
-                    <p>Product Manager</br>Intern</p>
+                    <p>Product Manager<br>Intern</p>
                   </a>
                 </div>
               </div>
