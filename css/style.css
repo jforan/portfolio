@@ -52,19 +52,23 @@ a.jump:focus{
 
 #myBtn {
     display: none;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     bottom: 10px;
     float: right;
     right: 3%;
     z-index: 1;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     background-color: #ccc;
     border: solid 2px #ccc;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 15px;
     border-radius: 50px;
     font-size: 12px;
+    text-decoration: none;
+    color: black;
 }
 
 #myBtn:hover {
@@ -72,9 +76,10 @@ a.jump:focus{
   border-color: #aaa;
 }
 
-#myBtn a{
-  color: black;
-  text-decoration: none;
+a#myBtn{
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 0px;
 }
 
 
@@ -805,29 +810,34 @@ img.small{
 
 .personas{
   margin:auto;
+  display: flex;
 }
 
-.personas a{
-  color: black;
-  text-decoration: none;
-  font-size: 13px;
-}
 
-.personas button{
+.persona_one{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  border-radius: 50%;
+  border: 2px solid #EF6C00;
   height: 80px;
   width: 80px;
-  background-color: white;
-  border: 2px solid #EF6C00;
-  border-radius: 50%;
-  text-decoration: none;
-  display: inline-block;
 }
 
-.personas button:hover{
+.persona_one a{
+  color: black;
+  font-size: 13px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.persona_one:hover{
   background-color: #EF6C00;
 }
 
-.personas button:hover a{
+.persona_one:hover a{
   color: white;
 }
 
