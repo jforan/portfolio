@@ -13,7 +13,7 @@ header{
 
 h1{
   font-size: 20px;
-  color: #5e5e5e;
+  color: yellow;
   padding-top: 10px;
   /* padding-left: 30px; */
   padding-bottom: 10px;
@@ -161,94 +161,97 @@ footer img{
 
 /* about me */
 
-
-.about_me_container_intro{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px;
-  grid-gap: 50px;
-  padding-top: 50px;
-  margin-bottom: 100px;
-  overflow: hidden;
+.about_me_intro{
+  display: block;
+  font-size: 75px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.about_me_container_intro p{
-  font-size: 50px;
-  margin: auto;
+.about_me_intro p, .about_me_goal, .contact_me{
   text-align: center;
-  grid-column: 1;
-  grid-row: 1;
-  z-index: 1;
-}
-
-.about_me_container_intro img{
-  width: 100%;
-  opacity: .9;
-  margin: auto;
-  grid-column: 1 / span 2;
-  grid-row: 1;
 }
 
 
 .about_me_container{
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 7px auto;
-  grid-row-gap: 25px;
-  font-size: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 150px;
-}
-
-.blank_about{
-  grid-column: 1;
-  grid-row: 1;
-  background: orange;
-  padding-bottom: 0px;
-}
-
-.about_me_text{
-  grid-column: 1 /span 5;
-  grid-row: 2;
-}
-
-
-.about_me_passion{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 300px;
-  grid-gap: 50px;
-  padding-bottom: 150px;
-}
-
-.about_me_passion img{
-  height: 95%;
-  margin: auto;
-}
-
-.about_me_passion p{
-  text-align: center;
-  margin: auto;
-  font-size: 30px;
-}
-
-
-.about_me_contact_container{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  grid-template-rows: 7px auto;
-  grid-row-gap: 25px;
-  font-size: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6,500px);
+  grid-row-gap: 150px;
+  padding-top: 50px;
   padding-bottom: 100px;
 }
 
-.contact_me{
-  grid-column: 1 /span 5;
+.about_me_container div {
+  overflow: hidden;
+}
+
+.about_me_container p{
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  /* background-color: rgb(255,255,255, .95); */
+  /* background-color: white; */
+  width: 60%;
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+
+}
+
+.about_me_container img{
+  height: 75%;
+  margin: auto;
+}
+
+.about_me_intro_text{
+  font-size: 55px;
+}
+
+.about_me_intro_text, .about_me_nyu, .about_me_nyu_opps, .about_me_nielsen, .about_me_michigan, .about_me_passion{
+  margin: auto;
+  z-index: 1;
+}
+
+.about_me_intro_text, .about_me_nyu_img, .about_me_nyu_opps, .about_me_nielsen_img, .about_me_michigan, .about_me_passion_img{
+  grid-column: 4 / span 4;
+}
+
+.about_me_intro_img, .about_me_nyu, .about_me_nyu_opps_img, .about_me_nielsen, .about_me_michigan_img, .about_me_passion{
+   grid-column: 1 / span 4;
+}
+
+.about_me_intro_text, .about_me_intro_img{
+  grid-row: 1;
+}
+
+.about_me_nyu, .about_me_nyu_img{
   grid-row: 2;
-  font-size: 25px;
+}
+
+.about_me_nyu_opps, .about_me_nyu_opps_img{
+  grid-row: 3;
+}
+
+
+.about_me_nielsen, .about_me_nielsen_img{
+  grid-row: 4;
+}
+
+.about_me_michigan, .about_me_michigan_img{
+  grid-row: 5;
+}
+
+.about_me_passion, .about_me_passion_img{
+  grid-row: 6;
+}
+
+.contact_me{
+  font-size: 35px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 
@@ -271,7 +274,7 @@ footer img{
 }
 
 .container_projects img{
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   max-height: 300px;
   width: auto;
 }
@@ -292,7 +295,7 @@ footer img{
   height: 100%;
   text-align: center;
   transform-style: preserve-3d;
-  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .flip_card:hover .flip_card_inner{
@@ -307,16 +310,20 @@ footer img{
   backface-visibility: hidden;
 }
 
+.flip_card_front{
+  background-color: #eee;
+  color: black;
+}
 
 .flip_card_back{
   background-color: white;
+  color: black;
   transform: rotateY(180deg);
   justify-content: center;
   align-items: center;
 }
 
 .flip_card_back h1{
-  color: #313437;
   padding-top: 120px;
   padding-bottom: 10px;
   font-size: 30px;
@@ -325,7 +332,7 @@ footer img{
 .container_projects a{
   display: block;
   text-decoration: none;
-  color: #5e5e5e;
+  color: black;
   height: 100%;
   width: 100%;
 }
@@ -678,7 +685,7 @@ footer img{
   margin-right: auto;
 }
 
-.about_byb{
+.about_byb, .project_recs{
   margin-bottom: 75px;
 }
 
